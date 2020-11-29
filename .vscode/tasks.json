@@ -10,8 +10,7 @@
       "adjustMods": {
         "EditorExtensions": true,
         "flib": true,
-        // replace with the mod name
-        "ModTemplate": true,
+        "TaskList": true,
         "Sandbox": true
       },
       "disableExtraMods": true

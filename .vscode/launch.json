@@ -1,4 +1,3 @@
-// replace all instances of `ModTemplate` with the name of the mod
 {
   "version": "0.2.0",
   "configurations": [
@@ -8,7 +7,7 @@
       "name": "Debug",
       "factorioPath": "${env:factorioTestbench1}",
       "hookMode": "debug",
-      "hookControl": ["ModTemplate", "Sandbox"],
+      "hookControl": ["TaskList", "Sandbox"],
       "factorioArgs": ["--load-scenario", "EditorExtensions/testing"]
     },
     {
@@ -17,7 +16,7 @@
       "name": "Debug (data)",
       "factorioPath": "${env:factorioTestbench1}",
       "hookMode": "debug",
-      "hookControl": ["ModTemplate", "Sandbox"],
+      "hookControl": ["TaskList", "Sandbox"],
       "hookData": true,
       "hookSettings": true,
       "factorioArgs": ["--load-scenario", "EditorExtensions/testing"]
@@ -28,7 +27,7 @@
       "name": "Profile",
       "factorioPath": "${env:factorioTestbench1}",
       "hookMode": "profile",
-      "hookControl": ["ModTemplate", "Sandbox"]
+      "hookControl": ["TaskList", "Sandbox"]
     }
   ]
 }

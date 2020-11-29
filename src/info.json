@@ -1,11 +1,11 @@
 {
-  "name": "ModTemplate",
+  "name": "TaskList",
   "version": "0.1.0",
-  "title": "MOD TEMPLATE",
+  "title": "Task List",
   "author": "raiguard",
   "contact": "Discord: Raiguard#7402",
-  "homepage": "https://github.com/raiguard/Factorio-ModTemplate",
-  "description": "This is a template for creating Factorio mods based on flib.",
-  "factorio_version": "1.0",
-  "dependencies": ["base >= 1.0.0", "flib >= 0.4.0"]
+  "homepage": "https://github.com/raiguard/Factorio-TaskList",
+  "description": "Create, organize, and assign tasks. Similar to Todo List.",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1.0", "flib >= 0.6.0"]
 }
