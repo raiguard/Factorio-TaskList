@@ -1,4 +1,5 @@
 local event = require("__flib__.event")
+local gui = require("__flib__.gui-beta")
 local migration = require("__flib__.migration")
 
 local global_data = require("scripts.global-data")
@@ -19,15 +20,18 @@ event.on_init(function()
   end
 end)
 
-event.on_load(function()
-end)
-
 event.on_configuration_changed(function(e)
   if migration.on_config_changed(e, migrations) then
     for i, player_table in pairs(global.players) do
       player_data.refresh(game.get_player(i), player_table)
     end
   end
+end)
+
+-- GUI
+
+gui.hook_events(function(e)
+
 end)
 
 -- PLAYER
