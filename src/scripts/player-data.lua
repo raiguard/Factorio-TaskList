@@ -1,3 +1,5 @@
+local main_gui = require("scripts.gui.main.controller")
+
 local player_data = {}
 
 function player_data.init(player_index)
@@ -9,6 +11,8 @@ function player_data.init(player_index)
 end
 
 function player_data.refresh(player, player_table)
+  main_gui.destroy(player_table)
+  main_gui.build(player, player_table)
 end
 
 return player_data
